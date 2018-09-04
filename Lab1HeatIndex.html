@@ -13,26 +13,22 @@
         <input type="number" id="tempInput" value="0" />
       </label>
       <label>
-        Relative Humidity (%);
+        Relative Humidity (%)
         <input type="number" id="relhumInput" value="0" />
       </label>
       <button onclick="assessTemperature();">Evaluate</button>
       <output id="result"></output>
     </form>
     <script>
-    function assessTemperature() {
-        <output id="result"></output>
-      </form>
-      <script>
-          var inputElem = document.querySelector('#tempInput');
-          var outputElem = document.querySelector('#result');
-          var temp = inputElem.value;
-          var inputElem = document.querySelector('#relhumInput');
-          var relhum = inputElem.value;
-          relhum = relhum/100
-          var '#result' = -42.379 + 2.04901523 * temp + 10.14333127 * relhum - 0.22475541 * temp * relhum - 0.00683783 * temp^2 - 0.05481717 * relhum^2 + 0.00122874 * temp^2 * relhum + 0.00085282 * temp * relhum^2 - 0.00000199 * temp2 * relhum^2
-
-        outputElem.innerHTML = 'The heat index is ' + '#result' + ' today.'
+      function assessTemperature() {
+        var inputElem = document.querySelector('#tempInput');
+        var outputElem = document.querySelector('#result');
+        var temp = inputElem.value;
+        var inputElem = document.querySelector('#relhumInput');
+        var relhum = inputElem.value;
+        relhum = relhum/100
+        var result = -42.379 + 2.04901523 * temp + 10.14333127 * relhum - 0.22475541 * temp * relhum - 0.00683783 * temp^2 - 0.05481717 * relhum^2 + 0.00122874 * temp^2 * relhum + 0.00085282 * temp * relhum^2 - 0.00000199 * temp^2 * relhum^2
+        outputElem.innerHTML = 'The heat index is ' + result + ' today.'
       }
     </script>
   </body>
